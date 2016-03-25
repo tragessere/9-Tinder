@@ -59,6 +59,29 @@ class DraggableImageView: UIImageView {
 			
 			let rotation = CGAffineTransformRotate(CGAffineTransformIdentity, degreesToRadians(offset))
 			self.transform = rotation
+		} else if gesture.state == UIGestureRecognizerState.Ended {
+			if center.x - originalCenter.x > 50 {	//Animate off screen to right
+				UIView.animateWithDuration(0.4, animations: {
+					self.center.x = self.superview!.frame.width + self.frame.width
+				}, completion: { (something: Bool) in
+//					self.center = self.originalCenter
+//					self.transform = CGAffineTransformIdentity
+				})
+			} else if center.x - originalCenter.x < -50 {	//Animate off screen to left
+				UIView.animateWithDuration(0.4, animations: {
+					self.center.x = self.frame.width * -1
+				}, completion: { (something: Bool) in
+//					self.center = self.originalCenter
+//					self.transform = CGAffineTransformIdentity
+				})
+			} else {	//Animate back to default position
+				UIView.setAnimationCurve(UIViewAnimationCurve.Linear)
+				
+				UIView.animateWithDuration(0.5, animations: { 
+					self.center = self.originalCenter
+					self.transform = CGAffineTransformIdentity
+				})
+			}
 		}
 	}
 	
