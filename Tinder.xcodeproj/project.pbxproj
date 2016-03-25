@@ -14,6 +14,8 @@
 		208A36191CA47E2800F3C369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208A36171CA47E2800F3C369 /* LaunchScreen.storyboard */; };
 		208A36221CA485D000F3C369 /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208A36211CA485D000F3C369 /* DraggableImageView.xib */; };
 		208A36241CA486F900F3C369 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A36231CA486F800F3C369 /* DraggableImageView.swift */; };
+		20A7EFDC1CA4D2A9003BE390 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7EFDA1CA4D2A9003BE390 /* ProfileViewController.swift */; };
+		20A7EFDD1CA4D2A9003BE390 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A7EFDB1CA4D2A9003BE390 /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		208A361A1CA47E2800F3C369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		208A36211CA485D000F3C369 /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 		208A36231CA486F800F3C369 /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		20A7EFDA1CA4D2A9003BE390 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		20A7EFDB1CA4D2A9003BE390 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				208A36211CA485D000F3C369 /* DraggableImageView.xib */,
 				208A36231CA486F800F3C369 /* DraggableImageView.swift */,
+				20A7EFDA1CA4D2A9003BE390 /* ProfileViewController.swift */,
+				20A7EFDB1CA4D2A9003BE390 /* ProfileViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 				208A36191CA47E2800F3C369 /* LaunchScreen.storyboard in Resources */,
 				208A36161CA47E2800F3C369 /* Assets.xcassets in Resources */,
 				208A36221CA485D000F3C369 /* DraggableImageView.xib in Resources */,
+				20A7EFDD1CA4D2A9003BE390 /* ProfileViewController.xib in Resources */,
 				208A36141CA47E2800F3C369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +159,7 @@
 			files = (
 				208A36111CA47E2800F3C369 /* CardsViewController.swift in Sources */,
 				208A36241CA486F900F3C369 /* DraggableImageView.swift in Sources */,
+				20A7EFDC1CA4D2A9003BE390 /* ProfileViewController.swift in Sources */,
 				208A360F1CA47E2800F3C369 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
